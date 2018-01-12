@@ -1,0 +1,162 @@
+body{
+	font-family:Arial;
+	}
+	
+#espacio_juego{
+	background-image:url(../img/fondo_espacio.jpg); /* Introducir la imagen de fondo */
+	background-repeat:no-repeat; /* No repetir la imagen */
+	background-size:cover; /* Resize la imagen de fondo a todo el contenedor del espacio de juego */
+	width:100%; /* Ocupar todo el ancho de la pantalla */
+	height:100%; /* Ocupar todo el alto de la pantalla */
+	position:absolute; /* Posición absoluta en el inicio del conenedor padre (body) */
+	z-index:-2;
+	border-style:solid;
+	border-color:red; /* Borde solido de color rojo alrededor del juego */
+}
+
+#suelo{
+	border-style:solid;
+	border-color:transparent;
+	border-top-color:black;
+	height:8%;
+	width:100%;
+	position:absolute;
+	z-index:0;
+	bottom:0%; /*Colocación en la base de su contenedor padre (espacio juego)*/
+	background-image:url(../img/fondo_luna.jpg); /* Introducir la imagen de fondo */;
+	}
+
+#panel_control{
+	position:relative; /* Se podría poner absoluto porque la posición relativa es la misma que le correspondería */
+	z-index:-1;
+	margin-top:1em;
+	margin-left:1em;
+	width:10%;
+	height:25%;
+	background-color:transparent;
+	}
+	
+	#elementos{
+		max-height:70%; /* Porcentajes para que se redimensionen las cajas y celdas al cambiar el tamaño de los conenedores padre */
+		max-width:95%;
+		border-collapse:collapse; /* Juntar las celdas para que no hagan doble borde */
+		font-size:1vh;
+		}
+		.titulo_tabla{ /*También vale para la tabla del panel de opciones al ser una clase*/
+			font-size:2vh;
+			font-weight:bold;
+			color:#48eedc;
+			}
+		.propiedad{ /* Formato particular a las clases dentro de la tabla. Bordes y tamaños. */
+			background-color:transparent;
+			width:57%;
+			text-align:right;
+			padding-right:0.6em; /* Deja un hueco de 6px a la derecha del texto clase propiedad para que no se junte a los valores. */
+			color:#61f516;
+			}
+		.valor{
+			background-color:#e1f516;
+			width:28%;
+			border-bottom:solid 2px #16abf5;
+			border-left:solid 2px #16abf5;
+			border-top:solid 2px #16abf5;
+			color:#290df6;
+			}
+		.unidad{
+			background-color:#e1f516;
+			width:15%;
+			border-bottom:solid 2px #16abf5;
+			border-right:solid 2px #16abf5;
+			border-top:solid 2px #16abf5;
+			color:#290df6;
+			}
+
+#ocultar_menu{
+	display:none;
+	}
+	
+#mostrar_menu{
+	display:none;
+	}
+	
+#panel_opciones{
+	position:absolute; /* Posición absoluta con respecto al inicio del contenedor de juego */
+	z-index:-1;
+	top:0px;
+	right:0px;
+	margin-top:1em;
+	margin-right:1em;
+	width:8%;
+	height:28%;
+	background-color:transparent;
+	text-align:center;
+	}
+	#opciones{
+		background-color:transparent;
+		max-height:70%;
+		max-width:95%;
+		color:#61f516;
+		color:#48eedc;
+		font-size:1vh;
+		font-weight:bold;
+		margin:auto; /*Centrado de la tabla en su contenedor automáticamente*/
+		}
+		.boton{
+			border-style:solid;
+			border-color:#290df6;
+			border-width:2px;
+			background-color:#abaaaa;
+			color:#60F;
+			}
+		.boton:hover{
+			border-style:solid;
+			border-color:#290df6;
+			border-width:2px;
+			background-color:#60F;
+			color:#abaaaa;
+			}
+#nave{
+	width:100%;
+	height:80%;
+	background-color:transparent;
+	background-image:url(../img/nave.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	}
+	
+#motor{
+	display:none;
+	width:80%;
+	height:20%;
+	background-color:transparent;
+	background-image:url(../img/fire.png);
+	background-repeat:no-repeat;
+	background-size:50% 100%;
+	margin: 0 30%;
+	}
+	
+#vehiculo{
+	width:8%;
+	height:22%;
+	position:absolute; /* Posición del conenedor en el padre (espacio de juego) */
+	top:10%;
+	left:50%;
+	}
+	
+#boton_arranque{
+		width:12%;
+		height:20%;
+		position:absolute; /* Posición del conenedor en el padre (espacio de juego) */
+		top:70%;
+		left:5%;
+		background-image:url(../img/boton.png);
+		background-size:100% 100%;
+			}
+	
+#version{
+	position:absolute;
+	bottom:1%;
+	left:95%;
+	color:white;
+	font-size:1vh;
+	}
