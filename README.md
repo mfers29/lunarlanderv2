@@ -10,4 +10,6 @@ En J.S se definen:
 * Dos funciones para mostrar y ocultar el menú en el dispositivo móvil.  
 * Se han declarado las variables que se consideran necesarias para el juego.  
 * Se definen todas las funciones necesarias para los botones, marcadores, movimiento de la nave y distintos eventos del juego.  
-* Se utiliza la instrucción _window.onload_ para iniciar el juego a la carga de la pantalla.
+* Se utiliza la instrucción _window.onload_ para iniciar el juego a la carga de la pantalla.  
+
+https://rawgit.com/mfers29/lunarlanderv2/master/index.html
